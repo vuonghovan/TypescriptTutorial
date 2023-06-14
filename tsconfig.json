@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "preserveConstEnums": true,
+        "target": "ES2016",
+        "module": "commonjs",
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "noEmitOnError": true,
+        "sourceMap": true,
+        "strict": true,
+        "noUnusedParameters": true, // Waring a parameter don't use inside a function
+        "noUnusedLocals": true, // Waring a variable don't use inside a function
+        "strictNullChecks": true, // Check a variable is nullable
+    },
+    "include": [
+        "./src"
+    ],
+    "exclude": [
+        "**/*.spec.ts"
+    ]
+}
