@@ -10,7 +10,8 @@
         "strict": true,
         "noUnusedParameters": true, // Waring a parameter don't use inside a function
         "noUnusedLocals": true, // Waring a variable don't use inside a function
-        "strictNullChecks": true, // Check a variable is nullable
+        "strictNullChecks": true, // Check a variable is nullable,
+        "noUncheckedIndexedAccess": true, // Check a variable is undefined
     },
     "include": [
         "./src"

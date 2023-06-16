@@ -1,4 +1,5 @@
 "use strict";
+var _a;
 let age = 20;
 if (age <= 20) {
     age = 10;
@@ -65,6 +66,33 @@ function kgToLbs(weight) {
     }
     return parseInt(weight) * 0.5;
 }
-console.log(kgToLbs(12));
-console.log(kgToLbs('10'));
+console.log(kgToLbs(12)); // 18
+console.log(kgToLbs('10')); // 5
+let EmployeeModel = {
+    calc(str) {
+        return typeof str === 'string' ? parseInt(str) : str;
+    },
+    show() {
+        console.log('show');
+    }
+};
+let quanlity = 100;
+// Nullable type
+function greet(name) {
+    if (name === null) {
+        return 'nullable';
+    }
+    ;
+    console.log(name.toLocaleUpperCase());
+}
+greet(null);
+function getCustomer(id) {
+    return id == 0 ? null : { birthday: new Date() };
+}
+let customer1 = getCustomer(1);
+console.log((_a = customer1 === null || customer1 === void 0 ? void 0 : customer1.birthday) === null || _a === void 0 ? void 0 : _a.getFullYear()); //  Optional property access operator
+// Optional  element access operator
+// customer1[0];
+let log = null;
+log === null || log === void 0 ? void 0 : log('a');
 //# sourceMappingURL=index.js.map
