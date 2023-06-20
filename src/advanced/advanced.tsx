@@ -45,17 +45,17 @@ type IconSize = LooseAutocomplete<"sm" | "xs">;
 interface IconProps {
     size: IconSize
 }
-export const Icon = (props: IconProps) => {
-    return <></>;
-}
-const Comp1 = () => {
-    return (
-        <div>
-            <Icon size="xs" > </Icon>
-            <Icon Icon size="something" > </Icon>
-        </div>
-    )
-}
+// export const Icon = (props: IconProps) => {
+//     return <></>;
+// }
+// const Comp1 = () => {
+//     return (
+//         <div>
+//             <Icon size="xs" > </Icon>
+//             <Icon Icon size="something" > </Icon>
+//         </div>
+//     )
+// }
 
 /**
  * Dynamic function arguments with GENERICS
@@ -110,7 +110,7 @@ myObj.foo.push("bar");
  */
 
 
-import { GlobalReducer } from './types/types';
+import { GlobalReducer } from '../types/types';
 export const todosReducer: GlobalReducer<{ todos: { id: string }[] }> = (
     state,
     event

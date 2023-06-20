@@ -54,7 +54,7 @@ function size(input: CSSValue) {
 size(123);
 size('123px');
 size('123rem');
-size('123ex');  // Error
+// size('123ex');  // Error
 
 type Size = 'small' | 'medium' | 'large';
 type Color = 'primary' | 'secondary';
@@ -63,7 +63,7 @@ function applyStyle(style: Style) {
 }
 
 applyStyle('primary-small');
-applyStyle('small-primary');    // Error
+// applyStyle('small-primary');    // Error
 
 /**
  * TypeScript Mapped Types as clauses // Hidden Gem
